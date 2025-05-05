@@ -30,6 +30,14 @@ app.get('/', (req, res) => {
     res.render('index.ejs')
 })
 
+app.get('/home', (req, res) => {
+    res.render('home.ejs')
+})
+
+app.get('/addPost', (req,res) => {
+    res.render('addPost.ejs')
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`This server is running on port ${process.env.PORT} go catch it`)
 
