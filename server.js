@@ -25,6 +25,11 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     })
 
 
+
+app.get('/', (req, res) => {
+    res.render('index.ejs')
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`This server is running on port ${process.env.PORT} go catch it`)
 
