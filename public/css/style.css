@@ -1,3 +1,41 @@
 h1 {
-     color: red;
+     display: flex;
+     justify-content: center;
+     text-decoration: underline;
 }
+
+.randomPost {
+     list-style-type: none;
+}
+
+.title {
+     display: flex;
+     justify-content: center;
+     font-size: 25px;
+     padding-bottom: 5px;
+}
+
+.username{
+     display: flex;
+     justify-content: center;
+}
+
+.nav {
+     display: flex;
+     justify-content: space-around;
+     list-style-type: none;
+}
+
+.nav a {
+     color: #1a73e8;
+     text-decoration: none;
+     padding: 10px;
+}
+
+.nav a:hover {
+     color: #0c47a1; 
+     text-decoration: underline;
+     background-color: #eef6fb;
+     
+     border-radius: 2rem;
+   }

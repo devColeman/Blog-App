@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello</h1>
-    <ul>
+    <ul class="nav">
         <li><a href="/home">Blog</a></li>
         <li><a href="/addPost">Add a Post</a></li>
         
     </ul>
-<h3>Highlighted Post</h3>
-    <ul>
-        <li><%= blogTitle[num].username %> </li>
-        <li><%= blogTitle[num].title %> </li>
+<h1>Highlighted Post</h1>
+    <ul class="randomPost">
+        <li class="title"><%= blogTitle[num].title %> </li>
+        <li class="username">By: <%= blogTitle[num].username %> </li>
         <li><%= blogTitle[num].desc %> </li>
+        
     </ul>
 
 
