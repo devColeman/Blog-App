@@ -6,7 +6,6 @@ body {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    
 }
 
 .nav a {
@@ -14,6 +13,8 @@ body {
     text-decoration: none;
     padding: 10px;
     transition: color 0.2s ease;
+    background-color: white;
+    border-radius: 2rem;
 }
 
 .nav a:hover {
@@ -23,8 +24,9 @@ body {
   }
 
 input, label {
-    display: block;
+    display: block
 }
+
 
 #submit {
     margin-top: 10px;

@@ -33,7 +33,7 @@ app.get('/',async (req, res) => {
     
 })
 
-app.get('/home',async (req, res) => {
+app.get('/posts',async (req, res) => {
     const blogPosts = await db.collection('test').find().toArray()
     res.render('home.ejs', {blogTitle: blogPosts})
 })
