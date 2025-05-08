@@ -24,10 +24,13 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
         db = client.db(dbName)
     })
 
+let name = 'Devin'
 
-
-app.get('/', (req, res) => {
-    res.render('index.ejs')
+app.get('/',async (req, res) => {
+    const blogPosts = await db.collection('test').find().toArray()
+    
+    res.render('index.ejs', {blogTitle: blogPosts, num: Math.floor(Math.random() * blogPosts.length)})
+    
 })
 
 app.get('/home', (req, res) => {
@@ -36,6 +39,12 @@ app.get('/home', (req, res) => {
 
 app.get('/addPost', (req,res) => {
     res.render('addPost.ejs')
+})
+
+app.post('/addItem', (req, res) => {
+    
+    db.collection('test').insertOne({title: req.body.title, desc: req.body.desc, username: req.body.username })
+    res.redirect('/addPost')
 })
 
 app.listen(process.env.PORT, () => {

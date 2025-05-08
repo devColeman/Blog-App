@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/addPost.css">
 </head>
 <body>
-    <form action="addItem">
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/home">Blog</a></li>
+    </ul>
+    <form action="addItem" method="POST">
+        <label for="username">Enter a Username</label>
+        <input required type="text" name="username" id="username">
+        <label for="title">Enter a title</label>
+        <input type="text" name="title" id="title">
+        <label for="desc">Enter Blog Post</label>
+        <textarea name="desc" id="desc" required></textarea>
+        <input type="submit" id="submit">
     </form>
+    <!-- add a middleware like page for after you hit submit -->
 </body>
 </html>
