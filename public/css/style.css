@@ -1,3 +1,7 @@
+body {
+     background-color: #eaf1fb;
+ }
+
 h1 {
      display: flex;
      justify-content: center;
@@ -24,18 +28,34 @@ h1 {
      display: flex;
      justify-content: space-around;
      list-style-type: none;
-}
-
-.nav a {
-     color: #1a73e8;
+     
+ }
+ 
+ .nav a {
+     color: black;
      text-decoration: none;
      padding: 10px;
-}
-
-.nav a:hover {
-     color: #0c47a1; 
+     transition: color 0.2s ease;
+     background-color: white;
+     border-radius: 2rem;
+ }
+ 
+ .nav a:hover {
      text-decoration: underline;
-     background-color: #eef6fb;
-     
+     background-color: #8aafef;
      border-radius: 2rem;
    }
+
+   div {
+     background-color: white;
+     padding: 1rem;
+     border-radius: 3rem;
+     margin-bottom: 5px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     transition: color 0.2s ease;
+ }
+ 
+ div:hover {
+     background-color: #8aafef;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ }

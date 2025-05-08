@@ -33,8 +33,9 @@ app.get('/',async (req, res) => {
     
 })
 
-app.get('/home', (req, res) => {
-    res.render('home.ejs')
+app.get('/home',async (req, res) => {
+    const blogPosts = await db.collection('test').find().toArray()
+    res.render('home.ejs', {blogTitle: blogPosts})
 })
 
 app.get('/addPost', (req,res) => {

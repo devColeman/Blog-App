@@ -1,3 +1,41 @@
-li a {
-    color : red;
+body {
+    background-color: #eaf1fb;
 }
+
+div {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 3rem;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: color 0.2s ease;
+}
+
+div:hover {
+    background-color: #8aafef;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+    
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.2s ease;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    background-color: #8aafef;
+    border-radius: 2rem;
+  }

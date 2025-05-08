@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <ul>
+    <ul class="nav">
         <li><a href="/">Home</a></li>
         <li><a href="/addPost">Add a Post</a></li>
     </ul>
+
+
+ <% for(let i = 0; i <= blogTitle.length / 2; i++){%>
+    <div>
+    <h1> <%= blogTitle[i].title %></h1>
+    <span> <%= blogTitle[i].username %></span>
+    <p> <%= blogTitle[i].desc %></p>
+        </div>
+  <%
+    
+ }%>
 
 </body>
 </html>
